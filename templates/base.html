@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/static/stylesheet.css" />
+    {% block head %}
+    <title>505 Reports</title>
+    {% endblock %}
+  </head>
+  <body>
+    <div>
+      <div class="head">
+        <dl>
+          <dd><a href = "/"><img src="/static/505reportslogo.png"</dd>
+        </dl>
+    </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/sports.html">Sports</a></li>
+          <li><a href="/music.html">Music</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+      {% block footer %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
